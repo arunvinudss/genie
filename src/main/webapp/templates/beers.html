@@ -1,0 +1,20 @@
+<!-- Page Content -->
+    <div class="container">
+
+        <div class="row">
+
+            <div class="col-sm-3 col-md-4" ng-repeat="beer in beers">
+            	<div class="thumbnail">
+            		<a href="#">
+                    	<img ng-src="{{beer.image_url}}" alt="" width="200" height="200">
+               		</a>
+                	<div class="caption">
+
+                	<h4>{{beer.name}}</h4>
+                	<p>{{beer.category}}</br>{{beer.brewer}}</br>{{beer.country}}</p> 
+
+            	</div>
+            	</div>
+        	</div>
+        </div>
+    </div>

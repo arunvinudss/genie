@@ -1,0 +1,29 @@
+
+<!-- Page Content -->
+   <!-- Stores table -->
+		<div id="stores" class="container">
+			<table class="table table-hover">
+				<thead>
+					<tr>
+						<th>#</th>
+						<th>ID</th>
+						<th>Name</th>
+						<th>Address</th>
+						<th>City</th>
+						<th>Postal Code</th>
+						<th>Phone</th>
+					</tr>
+				</thead>
+				<tbody ng-repeat="store in stores | limitTo: 100">
+					<tr>
+						<td>{{$index + 1}}</td>
+						<td>{{store.store_id}}</td>
+						<td>{{store.name}}</td>
+						<td>{{store.address}}</td>
+						<td>{{store.city}}</td>
+						<td>{{store.postal_code}}</td>
+						<td>{{store.phone}}</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
